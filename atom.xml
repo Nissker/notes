@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://nissker.github.io/notes</id>
+    <id>https://nissker.top</id>
     <title>Nissker小站</title>
-    <updated>2020-04-05T14:10:40.128Z</updated>
+    <updated>2020-04-05T14:20:32.742Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://nissker.github.io/notes"/>
-    <link rel="self" href="https://nissker.github.io/notes/atom.xml"/>
+    <link rel="alternate" href="https://nissker.top"/>
+    <link rel="self" href="https://nissker.top/atom.xml"/>
     <subtitle>&lt;h1&gt;欢迎临谓Nissker小站&lt;/h1&gt;</subtitle>
-    <logo>https://nissker.github.io/notes/images/avatar.png</logo>
-    <icon>https://nissker.github.io/notes/favicon.ico</icon>
+    <logo>https://nissker.top/images/avatar.png</logo>
+    <icon>https://nissker.top/favicon.ico</icon>
     <rights>All rights reserved 2020, Nissker小站</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://nissker.github.io/notes/post/hello-gridea/</id>
-        <link href="https://nissker.github.io/notes/post/hello-gridea/">
+        <id>https://nissker.top/post/hello-gridea/</id>
+        <link href="https://nissker.top/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
