@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nissker.top</id>
     <title>Nissker小站</title>
-    <updated>2020-04-05T14:20:32.742Z</updated>
+    <updated>2020-04-06T15:40:56.977Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nissker.top"/>
     <link rel="self" href="https://nissker.top/atom.xml"/>
@@ -10,6 +10,102 @@
     <logo>https://nissker.top/images/avatar.png</logo>
     <icon>https://nissker.top/favicon.ico</icon>
     <rights>All rights reserved 2020, Nissker小站</rights>
+    <entry>
+        <title type="html"><![CDATA[如何玩转Debian]]></title>
+        <id>https://nissker.top/post/ru-he-wan-zhuan-debian/</id>
+        <link href="https://nissker.top/post/ru-he-wan-zhuan-debian/">
+        </link>
+        <updated>2020-04-06T15:39:52.000Z</updated>
+        <content type="html"><![CDATA[<hr>
+<h1 id="未完成"><strong>未完成</strong></h1>
+<hr>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何用手机开一个Minecraft Java版服务器]]></title>
+        <id>https://nissker.top/post/ru-he-yong-shou-ji-kai-yi-ge-minecraft-java-ban-fu-wu-qi/</id>
+        <link href="https://nissker.top/post/ru-he-yong-shou-ji-kai-yi-ge-minecraft-java-ban-fu-wu-qi/">
+        </link>
+        <updated>2020-04-06T15:39:27.000Z</updated>
+        <content type="html"><![CDATA[<hr>
+<h1 id="未完成"><strong>未完成</strong></h1>
+<hr>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何在手机上玩转Linux系统]]></title>
+        <id>https://nissker.top/post/ru-he-zai-shou-ji-shang-wan-zhuan-linux-xi-tong/</id>
+        <link href="https://nissker.top/post/ru-he-zai-shou-ji-shang-wan-zhuan-linux-xi-tong/">
+        </link>
+        <updated>2020-04-06T15:38:56.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="开学了咱的网站内容建设速度会放缓但一定会填完这个坑毕竟这不仅是我的学习笔记也是给大家的指路明灯让大家少走弯路享受玩机乐趣">开学了，咱的网站内容建设速度会放缓，但一定会填完这个坑，毕竟这不仅是我的学习笔记，也是给大家的指路明灯，让大家少走弯路，享受玩机乐趣</h1>
+<h2 id="废话不多说了我们进入正题">废话不多说了，我们进入正题</h2>
+<hr>
+<h2 id="众所周知android系统是基于linux系统的没有linux的话就没有android系统形象一点说的话android就是linux的儿贼">众所周知，Android系统是基于Linux系统的，没有Linux的话就没有Android系统，<s>形象一点说的话Android就是Linux的儿贼</s></h2>
+<h2 id="如果你想了解得详细一点可以看下面的关系列表">如果你想了解得详细一点可以看下面的关系列表</h2>
+<ul>
+<li>Android和Linux的关系
+<ol>
+<li>Android采用Linux作为内核</li>
+<li>Android对Linux内核做了修改，目的是适应在移动设备上使用</li>
+<li>Android开始作为Linux的一个分支，后来由于无法并入Linux的主开发树，已被Linux Kernel小组从开发树中删除</li>
+</ol>
+</li>
+</ul>
+<h2 id="看了上面你也许清楚了为什么一个手机能运行一个属于电脑的操作系统接下来教你如何安装这个系统">看了上面你也许清楚了为什么一个手机能运行一个属于电脑的操作系统，接下来教你如何安装这个系统</h2>
+<hr>
+<h1 id="step1"><strong>Step.1</strong></h1>
+<h2 id="安装终端软件-termux-termux是你的系统容器不过它还有其他玩法自己研究">安装终端软件 <strong>Termux</strong><br>
+　　Termux是你的系统容器，不过它还有其他玩法，自己研究</h2>
+<h1 id="step2"><strong>Step.2</strong></h1>
+<p>在Termux输入以下命令</p>
+<pre><code>sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list
+sed -i 's@^\(deb.*games stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable@' $PREFIX/etc/apt/sources.list.d/game.list
+sed -i 's@^\(deb.*science stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable@' $PREFIX/etc/apt/sources.list.d/science.list
+echo &quot;deb [trusted=yes] https://yadominjinta.github.io/files/ termux extras&quot; &gt;&gt; $PREFIX/etc/apt/sources.list
+apt update
+pkg in atilo-cn
+</code></pre>
+<h2 id="注下载慢的话请自备梯子"><em>注：下载慢的话请自备梯子</em></h2>
+<h1 id="step3"><strong>Step.3</strong></h1>
+<p>安装完后使用命令<br>
+<code>atilo</code><br>
+可查看使用帮助</p>
+<p>接下来使用命令<br>
+<code>atilo pull debian</code><br>
+下载debian镜像<br>
+<em>注：下载时要用到梯子，可将debian换成其他的系统</em></p>
+<p>下载完成后使用命令<br>
+<code>atilo run debian</code><br>
+运行debian系统</p>
+<h2 id="到这里就顺利安装完成了开始享受linux的趣味吧">到这里就顺利安装完成了<br>
+开始享受Linux的趣味吧！</h2>
+<ul>
+<li>其他有关教程
+<ul>
+<li>[如何玩转Debian] (https://nissker.top/aaaa.html)</li>
+<li>[用手机开一个Minecraft Java版服务器] (https://nissker.top/bbbb.html)</li>
+</ul>
+</li>
+</ul>
+<p><em>第一次用MarkDown写文章不是很熟，用了大约1小时完成这篇文章，排版也不是很好，以后会努力改进的！</em></p>
+<p>——Done 2020.04.06 / 22:50</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[本人的写作规则]]></title>
+        <id>https://nissker.top/post/ben-ren-de-xie-zuo-gui-ze/</id>
+        <link href="https://nissker.top/post/ben-ren-de-xie-zuo-gui-ze/">
+        </link>
+        <updated>2020-04-06T15:38:22.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>本人在写文章时会查询较多网络资料，尽量做到严谨写作，确保真实性</li>
+<li>在不影响阅读的情况下做表格和关系图时会尽量用MarkDown语法，不仅加快加载还能省流量</li>
+<li>...</li>
+</ol>
+<p><em>待补充</em></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://nissker.top/post/hello-gridea/</id>
